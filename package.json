@@ -1,0 +1,25 @@
+{
+  "name": "theodoria.software",
+  "version": "1.0.0",
+  "description": "Professional information website for Theodoria Software",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "export": "next export -o dist",
+    "start": "next start -p 8000",
+    "deploy": "s3-deploy './dist/**' --cwd './dist/' --deleteRemoved --region 'us-west-2' --bucket 'theodoria.software'"
+  },
+  "main": "index.js",
+  "repository": "https://github.com/tplorts/theodoria.software",
+  "author": "Ted Lorts",
+  "license": "MIT",
+  "dependencies": {
+    "next": "^4.2.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-icons": "^2.2.7"
+  },
+  "devDependencies": {
+    "s3-deploy": "^0.8.0"
+  }
+}
