@@ -1,11 +1,13 @@
 import Head from 'next/head'
+// import GoogleAnalytics from './GoogleAnalytics'
 
 
 export default (props) => (
   <div>
     <Head>
       <title>Theodoria Software</title>
-      <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
+      <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" />
+      {/*<GoogleAnalytics />*/}
     </Head>
     { props.children }
     <style jsx global>{`
