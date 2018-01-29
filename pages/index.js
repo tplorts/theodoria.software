@@ -10,8 +10,29 @@ const IconSize = 30
 
 class IndexPage extends React.Component {
 
+  constructor(props) {
+    super(props)
+    this.hueAngle = 0
+    this.rotationIntervalId = null
+    this.filterElement = null
+  }
+
   componentDidMount() {
-    console.log('mounted!')
+    this.filterElement = document.body
+    this.startRotation()
+  }
+
+  startRotation() {
+    this.rotationIntervalId = window.setInterval(() => this.rotate(), 500)
+  }
+
+  stopRotation() {
+    window.clearInterval(this.rotationIntervalId)
+  }
+
+  rotate() {
+    this.hueAngle = (this.hueAngle + 10) % 360
+    this.filterElement.style.filter = `hue-rotate( ${this.hueAngle}deg )`
   }
 
   render() {
@@ -70,6 +91,7 @@ class IndexPage extends React.Component {
             flex-direction: column;
             justify-content: space-around;
             align-items: flex-start;
+            max-width: 40rem;
           }
           section {
             margin: 2em;

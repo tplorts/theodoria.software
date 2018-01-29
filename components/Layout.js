@@ -22,7 +22,7 @@ export default (props) => (
       }
       body {
         padding: 1em;
-        background-color: #efebe9;
+        background-color: #ddf;
         font-family: 'Montserrat', sans-serif;
       }
       h1 {
