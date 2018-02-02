@@ -66,13 +66,13 @@ class IndexPage extends React.Component {
                   <a href="http://mapmyreps.us" target="_blank" className="mapmyreps">
                     <MapMyRepsLogo />
                   </a>
-                  <p>Map My Reps is a clean & simple interactive map view of the USA to clearly display Senators and Representatives from each state, along with details and links for each Congressperson.</p>
+                  <p>Map My Reps is a clean & simple interactive map view of the USA to clearly show each state's Senators and Representatives, along with details and links for each Congressperson.</p>
                 </li>
                 <li>
                   <a href="http://word-search.theodoria.software" target="_blank" className="word-search">
                     <h4>Word Search</h4>
                   </a>
-                  <p>This word search web app can automatically generate word searches given a desired grid size and a list of words.  It can then be played in the browser.  I built this app as a fun project to get more familiar with the latest version of the angular.</p>
+                  <p>Automatically generates a word search given the desired grid size and a list of words.  It can then be played in the browser.  I built this app as a fun project to get more familiar with the latest version of angular.</p>
                 </li>
               </ul>
             </section>
